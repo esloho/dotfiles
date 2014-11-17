@@ -1,4 +1,6 @@
-colorscheme darkblue
+colorscheme ron
+"let g:hybrid_use_Xresources = 1
+"colorscheme hybrid
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
