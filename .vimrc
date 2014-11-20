@@ -1,28 +1,15 @@
-colorscheme ron
-"let g:hybrid_use_Xresources = 1
-"colorscheme hybrid
+set background=dark
+
+set t_Co=256
+colorscheme slate 
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 filetype off        " required for Vundle, restored after
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'scrooloose/syntastic.git'
-
-" All plugind must be added before the following line
-call vundle#end()   " required
-filetype plugin indent on   " required
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -31,6 +18,8 @@ set number
 set hlsearch		" switch on highlighting
 set ignorecase		" ignore case on searches
 set enc=utf-8		" UTF-8 default encoding
+set fileencodings=ucs-bom,utf-8,default,latin1
+set termencoding=utf-8
 
 syntax on		" switch syntax highlighting on
 
@@ -77,3 +66,17 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'scrooloose/syntastic.git'
+Plugin 'flazz/vim-colorschemes'
+
+" All plugind must be added before the following line
+call vundle#end()   " required
+filetype plugin indent on   " required
