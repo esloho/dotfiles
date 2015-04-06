@@ -1,7 +1,10 @@
 set background=dark
 
 set t_Co=256
-colorscheme slate 
+colorscheme molokai 
+
+" Use not so dark version of molokai
+let g:molokai_original = 1
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -75,7 +78,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/syntastic.git'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'morhetz/gruvbox'
 
 " All plugind must be added before the following line
 call vundle#end()   " required
