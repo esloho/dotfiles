@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set background=dark
 
 set t_Co=256
@@ -5,6 +7,7 @@ colorscheme molokai
 
 " Use not so dark version of molokai
 let g:molokai_original = 1
+let g:rehash256 = 1
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -25,6 +28,7 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set termencoding=utf-8
 
 syntax on		" switch syntax highlighting on
+filetype plugin indent on   " required
 
 set tabstop=4		" number of visual spaces per TAB
 set softtabstop=4	" number of spaces in tab when editing
@@ -71,15 +75,15 @@ if !exists(":DiffOrig")
 endif
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'scrooloose/syntastic.git'
-Plugin 'morhetz/gruvbox'
+"Plugin 'gmarik/Vundle.vim'
+"Plugin 'scrooloose/nerdtree.git'
+"Plugin 'scrooloose/syntastic.git'
+"Plugin 'morhetz/gruvbox'
 
 " All plugind must be added before the following line
-call vundle#end()   " required
-filetype plugin indent on   " required
+"call vundle#end()   " required
+
