@@ -6,8 +6,8 @@ set t_Co=256
 colorscheme molokai 
 
 " Use not so dark version of molokai
-let g:molokai_original = 1
-let g:rehash256 = 1
+"let g:molokai_original = 1
+"let g:rehash256 = 1
 
 " To run neocomplete at start up
 let g:neocomplete#enable_at_startup = 1
