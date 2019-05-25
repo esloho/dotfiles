@@ -37,6 +37,7 @@ alias dcub='docker-compose up --build -d'
 alias dcu='docker-compose up -d'
 alias dce='docker-compose exec'
 alias dcl='docker-compose logs -f'
+alias dcr='docker-compose restart'
 
 alias gsh='gcloud compute ssh'
 alias k='kubectl'
@@ -77,6 +78,7 @@ export GIT_PS1_SHOWCOLORHINTS=true
 alias gs='git status'
 alias gb='git branch'
 alias go='git checkout'
+alias gf='git fetch'
 alias gc='git commit -am'
 alias gm='git merge'
 alias gpull='git pull'
@@ -98,3 +100,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
