@@ -1,0 +1,24 @@
+<code_scheme name="Esther's style" version="173">
+  <option name="AUTODETECT_INDENTS" value="false" />
+  <option name="GENERATE_FINAL_LOCALS" value="true" />
+  <option name="RIGHT_MARGIN" value="100" />
+  <option name="FORMATTER_TAGS_ENABLED" value="true" />
+  <JSCodeStyleSettings version="0">
+    <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
+  </JSCodeStyleSettings>
+  <JavaCodeStyleSettings>
+    <option name="GENERATE_FINAL_LOCALS" value="true" />
+  </JavaCodeStyleSettings>
+  <TypeScriptCodeStyleSettings version="0">
+    <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
+    <option name="FORCE_SEMICOLON_STYLE" value="true" />
+  </TypeScriptCodeStyleSettings>
+  <XML>
+    <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+  </XML>
+  <codeStyleSettings language="Dart">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>

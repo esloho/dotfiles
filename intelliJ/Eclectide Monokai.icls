@@ -1,7 +1,15 @@
 <scheme name="Eclectide Monokai" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2019-08-25T22:28:43</property>
+    <property name="ide">idea</property>
+    <property name="ideVersion">2019.2.0.0</property>
+    <property name="modified">2019-08-25T22:28:52</property>
+    <property name="originalScheme">Eclectide Monokai</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="13" />
-  <option name="EDITOR_FONT_NAME" value="Menlo" />
+  <option name="EDITOR_FONT_NAME" value="Hack" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
     <option name="ANNOTATIONS_COLOR" value="b2c0c6" />
@@ -30,7 +38,7 @@
     <option name="METHOD_SEPARATORS_COLOR" value="5b5a4e" />
     <option name="MODIFIED_LINES_COLOR" value="415f69" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="574300" />
-    <option name="RIGHT_MARGIN_COLOR" value="323232" />
+    <option name="RIGHT_MARGIN_COLOR" value="464646" />
     <option name="SELECTED_INDENT_GUIDE" value="505050" />
     <option name="SELECTED_TEARLINE_COLOR" value="cc9900" />
     <option name="SELECTION_BACKGROUND" value="214283" />
@@ -414,8 +422,7 @@
     </option>
     <option name="DELETED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="272822" />
-        <option name="BACKGROUND" value="ffffff" />
+        <option name="BACKGROUND" value="214283" />
       </value>
     </option>
     <option name="DEPRECATED_ATTRIBUTES">
@@ -647,6 +654,21 @@
         <option name="FOREGROUND" value="fe9720" />
       </value>
     </option>
+    <option name="PY.BUILTIN_NAME">
+      <value>
+        <option name="FOREGROUND" value="fe9720" />
+      </value>
+    </option>
+    <option name="PY.DECORATOR">
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+      </value>
+    </option>
+    <option name="PY.KEYWORD_ARGUMENT">
+      <value>
+        <option name="FOREGROUND" value="fe9720" />
+      </value>
+    </option>
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
         <option name="FOREGROUND" value="a7e22e" />
@@ -659,8 +681,7 @@
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="181818" />
-        <option name="BACKGROUND" value="e4e4e4" />
+        <option name="BACKGROUND" value="214283" />
       </value>
     </option>
     <option name="SPY-JS.EXCEPTION">
@@ -731,8 +752,7 @@
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="181818" />
-        <option name="BACKGROUND" value="e4e4e4" />
+        <option name="BACKGROUND" value="214283" />
       </value>
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -740,6 +760,9 @@
         <option name="FOREGROUND" value="fef629" />
         <option name="ERROR_STRIPE_COLOR" value="287bde" />
       </value>
+    </option>
+    <option name="TS.TYPE_GUARD">
+      <value />
     </option>
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
       <value>
@@ -780,8 +803,7 @@
     </option>
     <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="181818" />
-        <option name="BACKGROUND" value="e4e4e4" />
+        <option name="BACKGROUND" value="214283" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
