@@ -20,7 +20,7 @@ color_maven() {
 }
 
 # Google Cloud Platform
-source /usr/lib/google-cloud-sdk/completion.bash.inc
+#source /usr/lib/google-cloud-sdk/completion.bash.inc
 #source /usr/lib/google-cloud-sdk/path.bash.inc
 
 #export GCE_INI_PATH=~/seedtag/ansible/inventory/gce.ini
@@ -67,10 +67,3 @@ __git_complete gm _git_merge
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
-export PYTHONPATH=/home/esloho/CARTO/dev/cartoframes
-
-
-
-############## CARTO tools ################
-
-eval "$($HOME/CARTO/tools/.cdb/bin/cdb init -)"
