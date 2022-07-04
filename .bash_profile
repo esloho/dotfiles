@@ -34,8 +34,10 @@ export CLICOLOR=1
 
 ############## Git #########################
 
-source /etc/bash_completion.d/git-prompt
-source /etc/bash_completion.d/git-completion.bash
+#source /etc/bash_completion.d/git-prompt
+#source /etc/bash_completion.d/git-completion.bash
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Turn the prompt symbol red if the user is root
 if [ $(id -u) -eq 0 ] ; then
@@ -52,7 +54,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWCOLORHINTS=true
 
-__git_complete go _git_checkout
+__git_complete goto _git_checkout
 __git_complete gb _git_branch
 __git_complete gm _git_merge
 
@@ -67,3 +69,17 @@ __git_complete gm _git_merge
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
+
+############### Elixir #################
+. $(brew --prefix asdf)/asdf.sh
+
+export CFLAGS="-O2 -g -fno-stack-check"
+export KERL_CONFIGURE_OPTIONS="--disable-hipe --with-ssl=$(brew --prefix openssl)"
+export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$(brew --prefix openssl)"
+
+
+############## MacOS #################
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+############## asdf ##################
+. /usr/local/opt/asdf/libexec/asdf.sh
