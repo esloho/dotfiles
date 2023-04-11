@@ -41,3 +41,7 @@ alias mixc='mix compile --warnings-as-errors'
 alias mixg='mix graphql.schema.dump'
 alias mixq='mix queries.dump'
 
+# Python
+alias python='python3'
+alias pip='pip3'
+
