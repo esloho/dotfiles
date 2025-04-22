@@ -58,16 +58,9 @@ alias chc2='clickhouse client -h clickhouse-02 --port 9001'
 alias chcin='clickhouse client -h clickhouse-internal-01 --port 9002'
 
 alias vn='varnishd -a :6081 -T 127.0.0.1:6082 -f /Users/esloho/tinybird/dev/analytics/ch_lb.vcl -s malloc,32m -F -p max_retries=1'
-alias tb_services='brew services start kafka; /Users/esloho/tinybird/zookeeper-3.8.1/bin/zkServer.sh start; vn'
-alias tb_services_stop='brew services stop kafka; /Users/esloho/tinybird/zookeeper-3.8.1/bin/zkServer.sh stop'
 
 #alias tbmux='tmuxp load ./tb_tmux.yaml -d; tmux a'
 alias tbmux='tmuxp load ~/tinybird/tb_tmux.yaml -d; tmux a'
-
-alias tba='tinybird_server --port 8001'
-alias tbas='ps -ef | grep "tinybird_server" | grep -v grep | awk "{print $2}" | xargs kill -9'
-alias tbasp='ps -ef | grep "analytics/.e/bin/python" | grep -v grep | awk "{print $2}" | xargs kill -9'
-alias tbastop='tbas & tbasp' 
 
 alias awsprod='aws sso login --profile=production'
 
